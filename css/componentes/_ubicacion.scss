@@ -1,0 +1,13 @@
+.ubicacion {
+    width: 80%;
+    height: 90px;
+    margin: 30px auto 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 8px;
+    @include caja;
+    h3{
+      color:get-opacity($color-oscuro,.5);
+    }
+  }

@@ -1,0 +1,30 @@
+.noticias{
+
+    width: 40%;
+    padding: 50px 0 0 50px;
+
+    &__articulo{
+        
+        margin-bottom: 75px;
+        border-bottom: 3px solid $color-primario;
+h2{  
+    font-weight: 500;
+    font-size: 16px; 
+   
+    @include titulos ($Fuente1) 
+}
+h3{
+
+    font-size: 20px; 
+    @include titulos ($Fuente1)
+    
+
+}
+p{
+    margin-bottom: 30px;
+    padding-right: 100px;
+    @include titulos ($Fuente2)
+    
+}
+    }
+}

@@ -1,0 +1,25 @@
+.estadisticas {
+  display: flex;
+  width: 80%;
+  height: 110px;
+  padding-top: 30px;
+  margin: 45px auto 0 auto;
+  justify-content: space-around;
+  /* color secundario */
+  @include caja;
+
+  &__seguidores {
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      @include titulos ($Fuente1);
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 12px;
+      text-align: center;
+      @include titulos ($Fuente2);
+    }
+  }
+}

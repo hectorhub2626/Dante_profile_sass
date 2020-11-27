@@ -1,0 +1,41 @@
+
+extend componentes/plantilla.pug
+block contenidos
+  main
+    section.perfil
+      .perfil__avatar: img(src="imagenes/principal1.svg")
+      h1.perfil__nombre #{name}
+      h2.perfil__titulo #{descripcion_prin}
+      a.boton SEGUIR  
+
+
+      section.estadisticas 
+        +estadistica(avatar_seguidores[0],avatar_seguidores[1])  
+        +estadistica(avatar_seguidos[0],avatar_seguidos[1]) 
+        +estadistica(avatar_articulos[0],avatar_articulos[1]) 
+
+
+      section.bio
+        h2 ACERCA DE MI
+        h3 #{descripcion_secun}
+
+      section.ubicacion
+         h2.ubicacion__lugar #{ubicacion}
+         h3.ubicacion__distancia #{distancia}
+
+
+      main.fotos
+        .fotos__principal
+          h2 mis fotos
+          img(class="fotos__principal" src="imagenes/4ta1.svg")    
+        .fotos__adicionales
+          img(src="imagenes/secundaria1.svg")    
+          img(src="imagenes/3era1.svg")    
+          img(src="imagenes/5ta1.svg")    
+
+    .noticias 
+      +noticias__articulo(noticia[0],noticia[1],noticia[2]) 
+
+      +noticias__articulo(noticia2[0],noticia2[1],noticia2[2]) 
+
+      +noticias__articulo(noticia3[0],noticia3[1],noticia3[2]) 

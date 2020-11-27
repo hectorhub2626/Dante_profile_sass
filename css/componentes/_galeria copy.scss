@@ -1,0 +1,38 @@
+.fotos{
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 20px 0 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+   
+    @include caja; 
+
+    &__principal  {
+        display: block;
+        margin-right: 10px;
+       
+    }
+    &__secundaria  {
+        display: block;
+      margin-right:5px;
+      margin-bottom: 5px;
+    }
+    &__tercera {
+        display: block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    &__cuarta  {
+        display: block;
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    h2{
+        margin-bottom: 10px;
+        @include titulos ($Fuente2);
+        font-weight: 600;
+        font-size: 20px;
+    }
+}

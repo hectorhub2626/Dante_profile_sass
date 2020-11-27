@@ -1,0 +1,37 @@
+.fotos{
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 20px 0 0 40px;
+    display: flex;
+    justify-content: space-evenly;
+   
+    @include caja; 
+
+    &__principal img   {
+        display: block;
+        margin-right: 10px;
+       
+    }
+    &__adicionales{
+        margin-top: 40px;
+        margin-right: 20px;
+
+        img {
+            display: block;
+            float: left;
+            margin-right:5px;
+            margin-bottom: 5px;
+    
+        }
+    }
+     
+    
+
+    h2{
+        margin-bottom: 10px;
+        @include titulos ($Fuente2);
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
